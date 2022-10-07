@@ -1,0 +1,7 @@
+h1 { color: blue; }
+h3 { color: red; }
+
+/* Set the height of the map to be 100% of the viewport height */
+#map {
+  height: 100vh;
+}
