@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- Here, just for grins, I'm populating the title with a parameter 
+            that gets specified in the call to render_template() in app.py. 
+            Go to app.py and see the '/other' route for details. -->
+        <title>{{title_we_want}}</title>
+
+        <!-- Import some CSS, just to show how it's done. -->
+        <link rel="stylesheet" type="text/css" href="static/style.css"></link>
+    </head>
+
+    <body>
+        <h1>This is other.html</h1>
+
+        <h2>You can call the following routes:</h2>
+        <ul>
+            <li>/</li>
+            <li>/other</li>
+            <li>/test</li>
+            <li>/dict</li>
+            <li>/dictionary</li>
+            <li>/film</li>
+            <li>/readjsonfile/nyc.geojson</li>
+            <li>/readmongodb</li>
+            <li>/map</li>            
+        </ul>
+        <br>
+
+        <!-- Define a link that takes us back to the index route. 
+        There are two ways to specify where we want to go, and they're 
+        discussed elsewhere in this demo. The second way is generally 
+        preferred in larger and more complex programs. -->
+
+        <!-- <a href="/">Click here to return home!</a> -->
+        <a href={{ url_for("IndexRoute") }}>Click here to return home!</a>
+    </body>
+
+</html>

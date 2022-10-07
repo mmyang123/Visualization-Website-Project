@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask Demo</title>
+
+        <!-- Import the Plotly library. Note that this has to 
+            happen before we importa any code that uses Plotly. -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <!-- Import the D3 library. Note that this has to happen 
+        before we import any code that uses D3. -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+
+        <!-- Import our own CSS file  -->
+        <link rel="stylesheet" type="text/css" href="static/css/style.css"></link>
+    </head>
+
+    <body>
+        <h1>This is index.html</h1>
+
+        <h2>Note: This demonstration assumes you have the <tt>rental_db</tt> database we created</h2>
+        <h2>for the Pagila Movie Rental Store, during Week 9, Class 2. If you don't have this database,</h2> 
+        <h2>you'll have to either create it or modify the code in app.py accordingly.</h2>
+
+        <h3>Also, be sure you've updated the PostgreSQL username, password, and port number in app.py!</h3>
+
+        <!-- Placeholder for a plot -->
+        <div id="plot"></div>
+
+        <!-- Next, we create a hyperlink that calls the '/other' route when clicked. 
+        Go to app.py to see how that '/other' route is defined. Note that we 
+        could do this two different ways: the first way refers to the route directly,
+        like this (remember, we never include the IP address in the name of the route): 
+
+        <a href="/other">Click here for the other page!</a> -->
+              
+        <!-- The second way uses Flask's url_for() function, and we pass to it the name of 
+        the function associated with the route we wish to call (see app.py). 
+        
+        Either way works fine, but the second way would have maintainability benefits 
+        in a larger or more complelx program. -->
+        
+        <a href={{ url_for("OtherRoute") }}>Click here for the other page!</a> 
+
+        <!-- Import the main JavaScript code. -->
+        <script type="text/javascript" src="static/js/main.js"></script>
+
+    </body>
+
+</html>
