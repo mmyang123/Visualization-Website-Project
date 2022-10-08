@@ -102,6 +102,13 @@ def CountrySpecificRoute(filename):
 
     return jsonify({"error": f"Data for : {search_term} not found."}), 404
 
+# Test Route
+@app.route("/map")
+def MapRoute():
+
+    webpage = render_template("map.html")
+    return webpage
+
 # Run app.py in debug
 if __name__ == '__main__':
     app.run(debug=True)

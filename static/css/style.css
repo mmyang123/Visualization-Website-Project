@@ -1,5 +1,12 @@
+html {
+  height: 100%;
+}
+
 body {
   /* background-color: black; */
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 #navbar-base {
@@ -40,4 +47,8 @@ body {
 
 #unemployment_map {
   background-color: rgb(255, 68, 0, 0.5);
+}
+
+#map {
+  height: 100%;
 }
