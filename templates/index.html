@@ -5,21 +5,24 @@
 
     <meta charset="UTF-8">
     <title>Website-Visualization-Project</title>
-    <link rel="stylesheet" href="Resources/CSS/reset.css">
+    <link rel="stylesheet" href="static/css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="Resources/CSS/styles.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
 </head>
 
 <body>
 
     <!-- Navbar Base -->
-    <div class="container-fluid" id="navbar-base">
+    <div class="container" id="navbar-base">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
 
                 <!-- NavBar -->
-              <a class="navbar-brand" href="#">Group 10</a>
+              <a class="navbar-brand" href="https://github.com/mmyang123/Visualization-Website-Project" target="_blank" id="navbrand">
+                <img src="/static/images/github_logo.png" alt="GitHub" width="30" height="30">
+                Group 10
+              </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -28,7 +31,7 @@
 
                     <!-- 1st Nav Item -->
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" aria-current="page" href={{ url_for("IndexRoute") }}>Home</a>
                   </li>
 
                     <!-- 2nd Nav Item -->
@@ -37,26 +40,74 @@
                       Datasets
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="/dataset1">Alcohol Consumption Data</a></li>
-                      <li><a class="dropdown-item" href="/dataset2">Unemployment Data</a></li>
+                      <li><a class="dropdown-item" target="_blank" href={{ url_for("CountriesRoute") }}>API</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="https://www.kaggle.com/datasets/mysarahmadbhat/alcohol-consumption">Alcohol Consumption</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="https://www.kaggle.com/datasets/pantanjali/unemployment-dataset">Unemployment</a></li>
                     </ul>
                   </li>
                 </ul>
 
                 <!-- Search Bar -->
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search for a Country..." aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for a Country..." aria-label="Search" id="data-search-bar">
+                    <button class="btn btn-outline-success" type="button" id="data-search-button">Search</button>
+                  </form>
               </div>
             </div>
           </nav>
     </div>
     <!-- Body Elements -->
-    <div class="container-fluid">
-        <h3>This is Index</h3>
+    <div class="container text-center" id="text-block">
+      <div class="row justify-content-md-center">
+        <div class="col-6">
+          <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nam dolor nisi rem magnam asperiores nulla dolorem architecto saepe eos reiciendis, dicta ratione vitae! Debitis ipsum dolorum corporis placeat vel.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nam dolor nisi rem magnam asperiores nulla dolorem architecto saepe eos reiciendis, dicta ratione vitae! Debitis ipsum dolorum corporis placeat vel.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nam dolor nisi rem magnam asperiores nulla dolorem architecto saepe eos reiciendis, dicta ratione vitae! Debitis ipsum dolorum corporis placeat vel.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nam dolor nisi rem magnam asperiores nulla dolorem architecto saepe eos reiciendis, dicta ratione vitae! Debitis ipsum dolorum corporis placeat vel.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nam dolor nisi rem magnam asperiores nulla dolorem architecto saepe eos reiciendis, dicta ratione vitae! Debitis ipsum dolorum corporis placeat vel.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center" id="visual-block">
+      <div class="row">
+        <div class="col">
+          <!-- Gauge for Alcohol -->
+          <div id="alcohol_gauge">
+            -gauge-here-
+          </div>
+        </div>
+        <div class="col">
+          <!-- Specific Country -->
+          <div id="country_selector">
+            -selector-here-
+          </div>
+        </div>
+        <div class="col">
+          <!-- Gauge for Unemployment -->
+          <div id="unemployment_gauge">
+            -gauge-here-
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- Map for Alcohol -->
+          <div id="alcohol_map">
+            -map-here-
+          </div>
+        </div>
+        <div class="col">
+          <!-- Map for Unemployment -->
+          <div id="unemployment_map">
+            -map-here-
+          </div>
+        </div>
+      </div>
     </div>
 
+    <script src="/static/js/searchbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>
