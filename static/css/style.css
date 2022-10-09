@@ -41,8 +41,10 @@ body {
   background-color: rgb(0, 223, 122, 0.5);
 }
 
-#alcohol_map {
-  background-color: rgb(217, 255, 0, 0.5);
+#a-map {
+  /* background-color: rgb(217, 255, 0, 0.5); */
+  height: 590px;
+  width: 590px;
 }
 
 #unemployment_map {
