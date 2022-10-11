@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+}
+
+body {
+  /* background-color: black; */
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#navbar-base {
+
+}
+
+#text-block {
+  background-color: white;
+}
+
+#visual-block {
+  background-color: white;
+}
+
+.row {
+  margin: 50px;
+}
+
+.col {
+  margin: 20px
+}
+
+#alcohol_gauge {
+  background-color: rgba(77, 0, 107, 0.5);
+}
+
+#country_selector {
+  background-color: rgb(38, 0, 255, 0.5);
+}
+
+#unemployment_gauge {
+  background-color: rgb(0, 223, 122, 0.5);
+}
+
+#a-map {
+  /* background-color: rgb(217, 255, 0, 0.5); */
+  height: 590px;
+  width: 590px;
+}
+
+#unemployment_map {
+  background-color: rgb(255, 68, 0, 0.5);
+}
+
+#map {
+  height: 100%;
+}
