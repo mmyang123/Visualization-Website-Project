@@ -9,7 +9,9 @@ _________________________________________________________________________
 _________________________________________________________________________
 
 # **Overview**
-- ### In Project 3, our group used two csv files of two different datasets, one data containing 235 countries and the other containing 193 countries. Both datasets needed ELT work done on it and then selected year 2010 for our project. We used pandas and extracted the tables from various sources, transformed and cleaned it and combined datasets to one dataframe. After that we loaded to PostgreSQL database to create a Schema table.
+- ### In Project 3, our group used two csv files of two different datasets, one data containing 235 countries and the other containing 193 countries. Both datasets needed ELT work done on it and then selected year 2010 for our project. We used pandas and extracted the tables from various sources, transformed and cleaned it and combined datasets to one dataframe. After that we loaded to PostgreSQL database to create a Schema table. The code in this repository showed the various ways the HTML, JavaScript, PostgreSQL, and Flask server might all work together to support Project 3.
+
+
 
 Links:
 
