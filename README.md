@@ -9,7 +9,10 @@ _________________________________________________________________________
 _________________________________________________________________________
 
 # **Overview**
-- ### In Project 3, our group used two csv files of two different datasets, one data containing 235 countries and the other containing 193 countries. Both datasets needed ELT work done on it and then selected year 2010 for our project. We used pandas and extracted the tables from various sources, transformed and cleaned it and combined datasets to one dataframe. After that we loaded to PostgreSQL database to create a Schema table. The code in this repository showed the various ways the HTML, JavaScript, PostgreSQL, and Flask server might all work together to support Project 3.
+- ### In Project 3, our group used two csv files of two different datasets, and . Both datasets needed ELT work done on it and then selected year 2010 for our project. We used pandas and extracted the tables from various sources, transformed and cleaned it and combined datasets to one dataframe. After that we loaded to PostgreSQL database to create a Schema table. The code in this repository showed the various ways the HTML, JavaScript, PostgreSQL, and Flask server might all work together to support Project 3.
+
+- ### Please create the repository to your desktop and clone it and then follow the instructions below.
+
 
 
 
@@ -25,9 +28,15 @@ _________________________________________________________________________
 
 ## **Instructions**
 
- 1. Open your terminal program and clone this *Visualization-Website-Project* repository. 
+ 1. Create a new repository project called *Visualization-Website-Project 3*. 
 
- 2. Once cloned, open a GitBash (Window) or Terminal (Mac) to open the *Visualization-Website-Project* folder, and type source *PythonData38* and use 'Jupyter Notebook' and hit Enter. to perform the ELT, and Pandas to load and converted DataFrame to Database.
+ 2. Clone the new repository to your computer's desktop then add your notebook files, Data file and your Flask app to the repo.
+
+ 3. Push the above changes to GitHub.
+
+ 
+ 
+ 4. Open a GitBash (Window) or Terminal (Mac) to the *Visualization-Website-Project 3* repo, and activate *PythonData38* and type 'Jupyter Notebook' and hit Enter. to perform the ETL, and Pandas to load and converted DataFrame to Database.
 
  3. Once step two has completed, open PgAdmin to access PostgreSQL. Create a database called *AlcoholUnemployment_db*.
 
